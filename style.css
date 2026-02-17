@@ -1,0 +1,75 @@
+/* ===== GLOBAL RESET ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                url('images/devprayag-sangam-uttarakhand.webp');
+    background-size: cover;
+    background-position: center;
+    padding-top: 80px; /* space for fixed navbar */
+}
+
+/* ===== GLASS NAVBAR ===== */
+.custom-navbar {
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 18px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Brand styling */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #00c896 !important;
+    letter-spacing: 1px;
+}
+
+/* Nav links */
+.custom-navbar .nav-link {
+    color: #ffffff !important;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #00c896 !important;
+}
+
+/* ===== ABOUT SECTION ===== */
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* ===== DESTINATION SECTION ===== */
+#destinations {
+    background-color: #f8f9fa;
+}
+
+#destinations h3 a {
+    text-decoration: none;
+    color: #212529;
+    font-weight: 600;
+}
+
+#destinations h3 a:hover {
+    color: #00c896;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    font-size: 0.9rem;
+}
