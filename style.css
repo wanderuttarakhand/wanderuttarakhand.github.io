@@ -1,13 +1,62 @@
 /* ===== GLOBAL RESET ===== */
+html {
+    scroll-behavior: smooth;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Lora', serif;
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #222;
 }
+
+.inner-page {
+    padding-top: 120px;
+}
+
+/* ===== GLOBAL TYPOGRAPHY IMPROVEMENT ===== */
+
+/* Main Headings */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Hero Heading */
+.hero h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+/* Section Headings */
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+/* Paragraph text on homepage */
+.home section p{
+    font-size: 1.15rem;
+    max-width: 750px;
+    margin: 0 auto 20px;
+}
+
+/* Divider inside button group */
+.divider-btn {
+    pointer-events: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 500;
+}
+
 
 /* ===== HERO SECTION ===== */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
                 url('images/devprayag-sangam-uttarakhand.webp');
     background-size: cover;
@@ -45,13 +94,8 @@ body {
 }
 
 /* ===== ABOUT SECTION ===== */
-section {
+.home {
     padding: 80px 0;
-}
-
-h2 {
-    font-weight: 700;
-    margin-bottom: 20px;
 }
 
 /* ===== DESTINATION SECTION ===== */
@@ -72,4 +116,58 @@ h2 {
 /* ===== FOOTER ===== */
 footer {
     font-size: 0.9rem;
+}
+
+/* ===== SUBMIT YOUR STORY PAGE ===== */
+
+
+/* ===== ARTICLE PAGE STYLES ===== */
+
+.article-content h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.article-content h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+
+.article-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.article-content {
+    max-width: 850px;
+    margin: 0 auto;
+    font-family: 'Lora', serif;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    color: #2d2d2d;
+}
+
+.article-content h1,
+.article-content h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.explore-more {
+    border-top: 1px solid #ddd;
+    padding-top: 40px;
+}
+
+.paragraphs{
+    padding: 0;
+}
+
+/* === Iframe ==== */
+/* Fix iframe overflow */
+iframe {
+    width: 100%;
+    border: none;
 }
