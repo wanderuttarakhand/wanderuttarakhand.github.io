@@ -113,6 +113,20 @@ section h2 {
     color: #00c896;
 }
 
+/* Compact Blog Card */
+.blog-card {
+    transition: 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-4px);
+}
+
+.blog-img {
+    height: 200px;
+    object-fit: cover;
+}
+
 /* ===== FOOTER ===== */
 footer {
     font-size: 0.9rem;
