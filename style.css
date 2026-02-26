@@ -202,3 +202,55 @@ iframe {
     width: 100%;
     border: none;
 }
+
+/*=== Toggle menu ===*/
+/* Hide toggle button on desktop */
+#menuToggle {
+  display: none;
+}
+
+/* ===== MOBILE NAV FIX ===== */
+@media (max-width: 991px) {
+
+  /* Show toggle icon */
+  #menuToggle {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Hide menu by default */
+  #navbarNav {
+    display: none;
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  /* Show menu when active */
+  #navbarNav.show {
+    display: block;
+  }
+
+  /* Stack links vertically */
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;   /* LEFT ALIGN */
+  }
+
+  .navbar-nav .nav-item {
+    margin: 8px 0;
+  }
+
+  .navbar-nav .nav-link {
+    margin-left: 0;            /* Remove desktop spacing */
+    padding-left: 0;
+  }
+}
+
+#menuToggle i {
+  transition: 0.3s ease;
+  font-size: 26px;
+}
